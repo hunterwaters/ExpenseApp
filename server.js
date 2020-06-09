@@ -26,7 +26,7 @@ app.use('/api/account/verify', require('./routes/verify'));
 app.use('/api/account/logout', require('./routes/logout'));
 //app.use('/api/v1/auth', require('./routes/auth'));
 
-const PORT = process.env.PORT || 2000;
+var PORT = process.env.PORT || 2000;
 
 if(process.env.NODE_ENV === 'production') {
     app.use(express.static('client/build'));
