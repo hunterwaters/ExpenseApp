@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const connectDB = async () => {
     try {
-        const conn = await mongoose.connect("mongodb+srv://HunterWaters:Goldsgym1@expense-tracker-jjhbm.mongodb.net/expensetracker?retryWrites=true&w=majority", {
+        const conn = await mongoose.connect("mongodb://HunterWaters:Goldsgym1@ds013172.mlab.com:13172/heroku_z1s7z6v3", {
             useNewUrlParser: true,
             useCreateIndex: true,
             useUnifiedTopology: true
