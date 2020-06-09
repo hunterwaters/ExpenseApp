@@ -1,0 +1,4 @@
+{
+    "MONGO_URI": "mongodb+srv://HunterWaters:Goldsgym1@expense-tracker-jjhbm.mongodb.net/expensetracker?retryWrites=true&w=majority",
+"jwtSecret": "et_myJwtSecret"
+}
