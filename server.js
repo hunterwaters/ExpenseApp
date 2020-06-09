@@ -26,6 +26,8 @@ app.use('/api/account/verify', require('./routes/verify'));
 app.use('/api/account/logout', require('./routes/logout'));
 //app.use('/api/v1/auth', require('./routes/auth'));
 
+const PORT = process.env.PORT || 2000;
+
 if(process.env.NODE_ENV === 'production') {
     app.use(express.static('client/build'));
 
@@ -33,7 +35,7 @@ if(process.env.NODE_ENV === 'production') {
 }
 
 
-const PORT = process.env.PORT || 2000;
+
 
 
 app.listen(PORT, console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}` .yellow.bold));
