@@ -5,6 +5,9 @@ exports.logoutUser = async (req, res, next) => {
     const  { query } = req;
     const { token } = query;
 
+    //"deploy": "now ./build",
+    //"postdeploy": "now alias -A ./build/now.json"
+
 
     UserSession.findOneAndUpdate({
         _id: token,
