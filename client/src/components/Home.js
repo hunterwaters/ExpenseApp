@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React  from 'react';
 
 import {
     getFromStorage,
@@ -34,10 +34,9 @@ import {
         this.logout = this.logout.bind(this);
     }
     componentDidMount() {
-        const obj = (getFromStorage('expense_tracker')) ;
+        const obj = getFromStorage('expense_trackerr');
         if(obj && obj.token){
             const { token } = obj;
-            //verify token
             fetch('/api/account/verify?token=' + token)
             .then(res => res.json())
             .then(json => {
@@ -110,6 +109,7 @@ import {
         
         
         //POST request to backend
+        //eslint-disable-next-line
         fetch('/api/account/signup', {
             method: 'POST',
             headers: {
@@ -152,6 +152,7 @@ import {
             isLoading: true,
         })
           //POST request to backend
+          //eslint-disable-next-line
           fetch('/api/account/signin', {
             method: 'POST',
             headers: {

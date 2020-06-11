@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const connectDB = async () => {
     try {
-        const conn = await mongoose.connect("mongodb://HunterWaters:Goldsgym1@ds013172.mlab.com:13172/heroku_z1s7z6v3", {
+        const conn = await mongoose.connect("mongodb+srv://HunterWaters:Goldsgym1@expense-tracker-jjhbm.mongodb.net/expensetracker?retryWrites=true&w=majority", {
             useNewUrlParser: true,
             useCreateIndex: true,
             useUnifiedTopology: true
@@ -14,7 +14,6 @@ const connectDB = async () => {
         process.exit(1);
     }
 }
-console.log(process.env.MONGODB_URI)
 
 
 module.exports = connectDB;

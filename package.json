@@ -23,7 +23,8 @@
     "jsonwebtoken": "^8.5.1",
     "mongodb-uri": "^0.9.7",
     "mongoose": "^5.9.18",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "node-modules": "^1.0.1"
   },
   "devDependencies": {
     "chai": "^4.2.0",

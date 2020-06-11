@@ -1,15 +1,12 @@
 const path = require('path');
 const express = require('express');
 const dotenv = require('dotenv');
-//const colors = require('colors');
 const morgan = require('morgan');
 const connectDB = require('./config/db')
 
 dotenv.config({ path: './.env' });
 
 connectDB();
-
-//const transactions = require('./routes/transactions')
 
 const app = express();
 
@@ -24,7 +21,7 @@ app.use('/api/account/signup', require('./routes/signup'));
 app.use('/api/account/signin', require('./routes/signin'));
 app.use('/api/account/verify', require('./routes/verify'));
 app.use('/api/account/logout', require('./routes/logout'));
-//app.use('/api/v1/auth', require('./routes/auth'));
+
 
 var PORT = process.env.PORT || 2000;
 
