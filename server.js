@@ -12,8 +12,8 @@ const app = express();
 
 app.use(express.json());
 
-if(process.env.NODE_ENV === 'development') {
-    app.use(morgan('dev'))
+if(process.env.NODE_ENV === 'production') {
+    app.use(express.static('client/build'));
 }
     //added the two different routes together
 app.use('/api/v1/transactions', require('./routes/transactions'));
@@ -23,7 +23,7 @@ app.use('/api/account/verify', require('./routes/verify'));
 app.use('/api/account/logout', require('./routes/logout'));
 
 
-var PORT = process.env.PORT || 2000;
+const PORT = process.env.PORT || 2000;
 
 app.use(express.static(path.join(__dirname, "..client/build")))
 
