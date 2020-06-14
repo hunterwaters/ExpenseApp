@@ -138,7 +138,6 @@ import {
                     });
                 }
         })
-
     }
 
     onSignIn() {
