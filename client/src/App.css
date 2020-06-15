@@ -159,11 +159,10 @@ input[type='number'] {
 }
 
 .signup {
-  width: 250px;
+  width: 260px;
   height: 30px;
   margin: 20px;
   padding: 0;
-  
 }
 
 .signin {
@@ -174,12 +173,14 @@ input[type='number'] {
 .para {
   font-size: 30px;
   padding: 5px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: bold;
+  
 }
 
 .navbar {
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -188,6 +189,15 @@ input[type='number'] {
     text-align: center;
     margin: 2px;
     font-weight: bold;
+    font-size: 25px;
+}
+
+a:link {
+  color: #68E3E5;
+}
+
+a:visited {
+  color: white;
 }
 
 .logout {
@@ -198,13 +208,17 @@ input[type='number'] {
   font-size: 40px;
   font-weight: bold;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  border: 3px solid white;
+  border: 5px solid purple;
   padding: 20px;
   width: 500px;
   border-radius: 5px;
+  color: white;
 }
+
 .button {
   font-size: 15px;
   margin-bottom: 60px;
+  border-radius: 8px;
+  padding: 4px;
 }
 

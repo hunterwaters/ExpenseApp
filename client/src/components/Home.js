@@ -247,8 +247,6 @@ import {
                         <button onClick = {this.onSignIn} className = "button">Sign In</button>
                     </div>
                 </div>
-                <br />
-                <br/>
                 <div className = "signup">
                 {
                             (signupError) ? (
