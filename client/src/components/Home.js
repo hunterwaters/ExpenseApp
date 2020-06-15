@@ -233,6 +233,7 @@ import {
         if(!token) {
             return (
                 <>
+                <h1 className = "title">Where's Your Money?</h1>
                 <div>
                     <div className = "signin">
                         {
@@ -243,7 +244,7 @@ import {
                         <p className = "para" >Sign In</p>
                         <input type = "email" placeholder = "Email" value = {signInEmail} className = "signup" onChange={this.onTextboxChangeSignInEmail} />
                         <input type = "password" placeholder = "Password" className = "signup" value = {signInPassword} onChange={this.onTextboxChangeSignInPassword} />
-                        <button onClick = {this.onSignIn}>Sign In</button>
+                        <button onClick = {this.onSignIn} className = "button">Sign In</button>
                     </div>
                 </div>
                 <br />
@@ -259,7 +260,7 @@ import {
                         <input type = "text" placeholder = "Last Name" className = "signup" value = {signupLastName} onChange = {this.onTextboxChangeSignUpLastName} />
                         <input type = "email" placeholder = "Email" value = {signupEmail} className = "signup" onChange = {this.onTextboxChangeSignUpEmail} />
                         <input type = "password" placeholder = "Password" className = "signup" value = {signupPassword} onChange = {this.onTextboxChangeSignUpPassword} />
-                        <button onClick = {this.onSignUp}>Sign Up</button>
+                        <button onClick = {this.onSignUp} className = "button" >Sign Up</button>
                        
                     </div>
     </>
