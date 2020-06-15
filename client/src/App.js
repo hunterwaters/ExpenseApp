@@ -7,6 +7,8 @@ import { AddTransaction } from './components/AddTransaction'
 import { Home } from './components/Home';
 
 import { GlobalProvider } from './context/GlobalState'
+import {
+  BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 //import { loadUser } from './actions/authActions';
 
 import './App.css';
@@ -19,14 +21,24 @@ function App()  {
 
   return (
     <GlobalProvider>
-      <Home />
-     <Header />
-     <div className = "container">
+    <Router className = "router">
+      <div className = "navbar">
+        <Link to ="/">Home ||</Link>
+        <Link to ="/expenses">Expenses</Link>
+        </div>
+        <Switch>
+          <Route exact path = "/">
+          <Home />
+          </Route>
+          <Route exact path = "/expenses">
+          <Header />
        <Balance />
        <IncomeExpenses />
        <TransactionList />
        <AddTransaction />
-     </div>
+          </Route>
+        </Switch>
+    </Router>
     </GlobalProvider>
   );
 }

@@ -240,9 +240,9 @@ import {
                                 <p>{signinError}</p>
                             ) :(null)
                         }
-                        <p>Sign In</p>
-                        <input type = "email" placeholder = "Email" value = {signInEmail} onChange={this.onTextboxChangeSignInEmail} />
-                        <input type = "password" placeholder = "Password" value = {signInPassword} onChange={this.onTextboxChangeSignInPassword} />
+                        <p className = "para" >Sign In</p>
+                        <input type = "email" placeholder = "Email" value = {signInEmail} className = "signup" onChange={this.onTextboxChangeSignInEmail} />
+                        <input type = "password" placeholder = "Password" className = "signup" value = {signInPassword} onChange={this.onTextboxChangeSignInPassword} />
                         <button onClick = {this.onSignIn}>Sign In</button>
                     </div>
                 </div>
@@ -254,11 +254,11 @@ import {
                                 <p>{signupError}</p>
                             ) :(null)
                         }
-                        <p>Sign Up</p>
-                        <input type = "text" placeholder = "First Name" value = {signupFirstName} onChange={this.onTextboxChangeSignUpFirstName} />
-                        <input type = "text" placeholder = "Last Name" value = {signupLastName} onChange = {this.onTextboxChangeSignUpLastName} />
-                        <input type = "email" placeholder = "Email" value = {signupEmail} onChange = {this.onTextboxChangeSignUpEmail} />
-                        <input type = "password" placeholder = "Password" value = {signupPassword} onChange = {this.onTextboxChangeSignUpPassword} />
+                        <p className = "para">Sign Up</p>
+                        <input type = "text" placeholder = "First Name" value = {signupFirstName}  className = "signup" onChange={this.onTextboxChangeSignUpFirstName} />
+                        <input type = "text" placeholder = "Last Name" className = "signup" value = {signupLastName} onChange = {this.onTextboxChangeSignUpLastName} />
+                        <input type = "email" placeholder = "Email" value = {signupEmail} className = "signup" onChange = {this.onTextboxChangeSignUpEmail} />
+                        <input type = "password" placeholder = "Password" className = "signup" value = {signupPassword} onChange = {this.onTextboxChangeSignUpPassword} />
                         <button onClick = {this.onSignUp}>Sign Up</button>
                        
                     </div>
